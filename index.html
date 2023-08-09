@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Лендинг пейдж для строительной компании" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>Digital project</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="/">Logo</a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a class="link header-nav__link" href="">ГЛАВНАЯ</a></li>
+            <li class="header-nav__item"><a class="link header-nav__link" href="">ГАЛЕРЕЯ</a></li>
+            <li class="header-nav__item"><a class="link header-nav__link" href="">ПРОЕКТЫ</a></li>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="">СЕРТИФИКАТЫ</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="">ГЛАВНКОНТАКТЫАЯ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="hero">
+            <div class="heading">
+              <h1 class="heading__title main-title">
+                <span class="main-title__upper">PROJECT</span>
+                <span class="main-title__lower">HOME</span>
+              </h1>
+              <div class="heading__arrows">
+                <button class="heading__prev-btn" type="button">Icon left</button>
+                <button class="heading__next-btn" type="button">Icon right</button>
+              </div>
+              <div class="heading__date">
+                <p class="heading__day">01</p>
+                <p class="heading__month">02</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="about">
+            <h2 class="title about__title">О компании</h2>
+            <p class="about__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged.
+            </p>
+            <button class="about__readmore-btn" type="button">ЧИТАТЬ icon</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="tasks">
+            <h2 class="title tasks__title">Основные задачи</h2>
+            <ul class="tasks__list">
+              <li class="tasks__item">
+                <h3 class="tasks__subtitle">1</h3>
+                <p class="tasks__text">
+                  Создание комфортных условий и повышение качества обслуживания клиентов
+                </p>
+              </li>
+              <li>
+                <h3 class="tasks__subtitle">2</h3>
+                <p class="tasks__text">
+                  Постоянно совершенствовать качество предоставляемых услуг путем обучения
+                  персонала, закупки нового оборудования и усиленной рекламы на рынке
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="projects">
+            <h2 class="title projects__title">Наши проекты</h2>
+            <ul class="projects__list">
+              <li class="projects__card card">
+                <div class="card__overlay">
+                  <h3 class="card__title">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="card__btn">ПОДРОБНЕЕ icon</button>
+                </div>
+              </li>
+
+              <li class="projects__card card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Амфитеатр</h3>
+                  <button class="card__btn">ПОДРОБНЕЕ icon</button>
+                </div>
+              </li>
+
+              <li class="projects__card card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Погрузочны Терминал</h3>
+                  <button class="card__btn">ПОДРОБНЕЕ icon</button>
+                </div>
+              </li>
+
+              <li class="projects__card card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Жилой комплекс</h3>
+                  <button class="card__btn">ПОДРОБНЕЕ icon</button>
+                </div>
+              </li>
+
+              <li class="projects__card card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Парк развлечений</h3>
+                  <button class="card__btn">ПОДРОБНЕЕ icon</button>
+                </div>
+              </li>
+            </ul>
+            <button class="projects__rest-btn">ВСЕ ПРОЕКТЫ icon</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contacts">
+            <h2 class="title contacts__title">Связаться с нами</h2>
+            <form class="contacts__form form">
+              <div class="form__wrapper">
+                <input class="form__field" type="text" placeholder="Имя" />
+                <input class="form__field" type="tel" placeholder="Номер телефона" required />
+                <input class="form__field" type="email" placeholder="E-mail" required />
+                <input class="form__field" type="text" placeholder="Интересующий товар/услуга" />
+                <textarea class="form__field" placeholder="Сообщение" cols="3"></textarea>
+              </div>
+              <label class="form__privacy">
+                <input type="checkbox" required hidden />
+                <span>icon</span>
+                Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+              </label>
+              <button class="form__submit-btn" type="submit">ОТПРАВИТЬ icon</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__upper">
+          <a href="/">Logo</a>
+          <div>
+            <h2>Информация</h2>
+            <nav>
+              <ul>
+                <li><a href="">ГЛАВНАЯ</a></li>
+                <li><a href="">ГАЛЕРЕЯ</a></li>
+                <li><a href="">ПРОЕКТЫ</a></li>
+                <li><a href="">СЕРТИФИКАТЫ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Контакты</h2>
+            <address>
+              <p>
+                <span>Icon</span>100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
+              </p>
+              <a href="tel:+380000000000"><span>Icon</span>+38 (000) 000 00 00</a>
+              <a href="mailto:mail@gmail.com"><span>Icon</span>mail@gmail.com</a>
+            </address>
+          </div>
+
+          <div>
+            <h2>Социальные сети</h2>
+            <ul>
+              <li><a href="" aria-label="Facebook">Icon</a></li>
+              <li><a href="" aria-label="Tweeter">Icon</a></li>
+              <li><a href="" aria-label="LinkedIn">Icon</a></li>
+              <li><a href="" aria-label="Pinterest">Icon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="footer__lower">
+          <p>&copy; 2019 Digital Project. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
