@@ -37,6 +37,10 @@ ul {
   overflow: hidden;
 }
 
+.section {
+  margin-bottom: 120px;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -73,15 +77,19 @@ ul {
   color: currentColor;
 }
 
+.button {
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  border: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header {
   padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo__icon {
-  fill: #333333;
 }
 
 @media screen and (min-width: 1440px) {
@@ -133,4 +141,77 @@ ul {
 
 .header-nav__link:hover::before, .header-nav__link:hover::after {
   transform: scale(1);
+}
+
+.logo__icon {
+  fill: #333333;
+}
+
+.hero {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 829px;
+    background-size: 770px 829px;
+    background-position: right;
+    background-image: url("../../../images/hero/hero-desktop@1x.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../../images/hero/hero-desktop@2x.jpg");
+  }
+}
+
+.heading {
+  padding-top: 336px;
+}
+
+.heading__title {
+  margin-bottom: 90px;
+}
+
+.heading__arrows {
+  position: relative;
+  display: flex;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
+  margin-bottom: 90px;
+}
+.heading__arrows::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.heading__slide-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  background-color: #ffffff;
+  border: 1px solid #F2F2F2;
+}
+.heading__slide-btn:hover {
+  background-color: #F9F9F9;
+}
+
+.main-title {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.main-title__upper {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.main-title__lower {
+  font-weight: 700;
+  color: #333333;
 }/*# sourceMappingURL=main.css.map */

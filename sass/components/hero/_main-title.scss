@@ -1,0 +1,14 @@
+.main-title {
+    font-size: 64px;
+    line-height: 1;
+}
+
+.main-title__upper {
+    font-weight: 300;
+    color: #BDBDBD;
+}
+
+.main-title__lower {
+    font-weight: 700;
+    color: $primary-text-color;
+}

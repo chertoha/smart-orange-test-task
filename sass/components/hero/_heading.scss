@@ -1,0 +1,48 @@
+.heading {
+    padding-top: 336px;
+}
+
+
+.heading__title {
+    margin-bottom: 90px;
+}
+
+
+
+.heading__arrows {
+    position: relative;
+    display: flex;
+    column-gap: 23px;
+    margin-bottom: 90px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #F2F2F2;
+
+    }
+}
+
+.heading__slide-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 53px;
+    height: 53px;
+    background-color: #ffffff;
+    border: 1px solid #F2F2F2;
+
+    &:hover {
+        background-color: #F9F9F9;
+    }
+}
+
+
+.heading__date {}
+
+.heading__day {}
+
+.heading__month {}
