@@ -1,4 +1,6 @@
 .hero {
+    display: flex;
+    justify-content: space-between;
 
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -15,6 +17,17 @@
         }
     }
 
+}
+
+.hero__view {
+    display: flex;
+    align-items: flex-end;
+
+
+    @include mq('desktop') {
+        width: 770px;
+        // background-color: tomato;
+    }
 }
 
 .hero__view-btn {}

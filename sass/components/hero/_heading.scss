@@ -1,5 +1,6 @@
 .heading {
     padding-top: 336px;
+    flex-grow: 1;
 }
 
 
@@ -10,25 +11,19 @@
 
 
 .heading__arrows {
-    position: relative;
+
     display: flex;
-    column-gap: 23px;
+    // column-gap: 23px;
     margin-bottom: 90px;
 
-    &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        background-color: #F2F2F2;
 
-    }
 }
 
 .heading__slide-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 
     width: 53px;
     height: 53px;
@@ -40,6 +35,26 @@
     }
 }
 
+.heading__slide-btn+.heading__slide-btn {
+    margin-left: 23px;
+}
+
+.heading__next-btn-wrapper {
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #F2F2F2;
+
+    }
+}
 
 .heading__date {}
 
