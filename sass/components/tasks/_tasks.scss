@@ -1,0 +1,46 @@
+.tasks {}
+
+
+.tasks__title {
+
+
+    @include mq('desktop') {
+        margin-bottom: 60px;
+    }
+}
+
+.tasks__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // column-gap: 187px;
+
+    font-size: 22px;
+    line-height: 1.636;
+
+
+}
+
+.tasks__item {
+    display: flex;
+    // height: 140px;
+    // width: 570px;
+    height: 140px;
+    column-gap: 30px;
+    flex-shrink: 0;
+
+    &:nth-child(1) .tasks__text {
+        width: 279px;
+    }
+
+    &:nth-child(2) .tasks__text {
+        width: 440px;
+    }
+}
+
+.tasks__icon {
+    flex-shrink: 0;
+    fill: #F2F2F2;
+}
+
+.tasks__text {}
