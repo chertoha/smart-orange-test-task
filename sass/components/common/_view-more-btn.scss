@@ -1,0 +1,23 @@
+.view-more-btn {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+
+    &:hover .view-more-btn__icon {
+        transition: transform 500ms $transition-timing-function;
+        transform: rotate(90deg);
+        animation: arrow-jump 500ms $transition-timing-function 500ms infinite;
+    }
+}
+
+
+@keyframes arrow-jump {
+    0% {
+        transform: rotate(90deg) translateX(-5px);
+    }
+
+    100% {
+        transform: rotate(90deg) translateX(5px);
+    }
+}

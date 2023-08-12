@@ -30,4 +30,12 @@
     }
 }
 
-.hero__view-btn {}
+
+.hero__view-btn {
+    color: $primary-text-color;
+
+    @include mq('desktop') {
+        padding: 30px 50px;
+        column-gap: 12px;
+    }
+}

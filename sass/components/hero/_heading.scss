@@ -56,7 +56,31 @@
     }
 }
 
-.heading__date {}
+.heading__date {
+    position: relative;
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 24px;
+    color: $title-color;
+    line-height: 1;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 44px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: #E0E0E0;
+
+    }
+
+
+}
 
 .heading__day {}
 

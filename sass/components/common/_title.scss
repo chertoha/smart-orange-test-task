@@ -1,0 +1,9 @@
+.title {
+    font-weight: 300;
+    color: $title-color;
+    line-height: 1;
+
+    @include mq('desktop') {
+        font-size: 64px;
+    }
+}

@@ -3,8 +3,13 @@ $primary-background-color: #ffffff;
 $secondary-background-color: #2C2C2C;
 $primary-text-color: #333333;
 $secondary-text-color: #ffffff;
+$title-color: #BDBDBD;
 
 //Breakpoints
 $breakpoint-mobile: 320px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1440px;
+
+
+//transitions
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

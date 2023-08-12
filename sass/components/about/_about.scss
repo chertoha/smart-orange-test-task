@@ -1,0 +1,56 @@
+.about {
+    padding: 30px 70px 60px 700px;
+    // height: 465px;
+
+    // border: 1px solid black;
+
+    background:
+        url('../../../images/about/about-1-desktop@1x.jpg') top 60px left 400px no-repeat,
+        url('../../../images/about/about-2-desktop@1x.jpg') top 30px left 100px no-repeat,
+        url('../../../images/about/about-3-desktop@1x.jpg') bottom 0 left 100px no-repeat,
+        linear-gradient(#FBFBFB, #FBFBFB calc(100% - 30px), #ffffff calc(100% - 30px), #ffffff);
+
+    @include mq('retina') {
+        background:
+            url('../../../images/about/about-1-desktop@2x.jpg') top 60px left 400px no-repeat,
+            url('../../../images/about/about-2-desktop@2x.jpg') top 30px left 100px no-repeat,
+            url('../../../images/about/about-3-desktop@2x.jpg') bottom 0 left 100px no-repeat,
+            linear-gradient(#FBFBFB, #FBFBFB calc(100% - 30px), #ffffff calc(100% - 30px), #ffffff);
+
+        // background-size: cover, 270px 365px, 270px 265px, 270px 140px;
+
+        background-size: 270px 345px,
+            270px 265px,
+            270px 140px, 100% 100%;
+    }
+
+
+    // background-repeat: no-repeat;
+    // background-position: top 0 left 0, top 60px left 100px;
+}
+
+.about__title {
+    @include mq('desktop') {
+        margin-bottom: 20px;
+    }
+}
+
+.about__description {
+    line-height: 1.79;
+    color: #000000;
+
+
+    @include mq('desktop') {
+        margin-bottom: 20px;
+    }
+
+}
+
+.about__readmore-btn {
+    color: $primary-text-color;
+
+    @include mq('desktop') {
+        padding: 24px 65px;
+        column-gap: 12px;
+    }
+}
