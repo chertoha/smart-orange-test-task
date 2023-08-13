@@ -1,0 +1,58 @@
+.form {}
+
+.form__wrapper {
+    margin-bottom: 22px;
+
+    background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
+
+    @include mq('retina') {
+        background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
+    }
+
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.form__field {
+    border: none;
+    display: block;
+
+    width: 391px;
+    padding: 15px 21px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 1.21;
+    color: #8D8D8D;
+
+    background-color: #F3F3F3;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__area {
+    height: 147px;
+}
+
+.form__privacy {
+    width: 391px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+
+    margin-bottom: 21px;
+
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.21;
+
+}
+
+
+
+
+.form__submit-btn {}

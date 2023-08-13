@@ -1,0 +1,21 @@
+.contacts {}
+
+
+.contacts__title {
+    margin-bottom: 22px;
+}
+
+.contacts__form {}
+
+
+
+.contacts__submit-btn {
+    column-gap: 12px;
+    padding: 24px 48px;
+    background-color: $primary-text-color;
+    color: #ffffff;
+}
+
+.contacts__submit-btn-icon {
+    fill: #ffffff;
+}

@@ -1,0 +1,33 @@
+.checkbox {}
+
+.checkbox__icon-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid rgba(51, 51, 51, 0.5);
+
+    &>.checkbox__icon {
+        display: none;
+    }
+}
+
+.checkbox__icon {
+    fill: $primary-text-color;
+}
+
+.checkbox__input:checked~.checkbox__icon-wrapper {
+    background-color: #F3F3F3;
+    border: none;
+
+    &>.checkbox__icon {
+        display: block;
+    }
+}

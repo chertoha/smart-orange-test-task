@@ -263,14 +263,28 @@
                 <input class="form__field" type="tel" placeholder="Номер телефона" required />
                 <input class="form__field" type="email" placeholder="E-mail" required />
                 <input class="form__field" type="text" placeholder="Интересующий товар/услуга" />
-                <textarea class="form__field" placeholder="Сообщение" cols="3"></textarea>
+                <textarea class="form__field form__area" placeholder="Сообщение"></textarea>
               </div>
-              <label class="form__privacy">
-                <input type="checkbox" required hidden />
-                <span>icon</span>
+              <label class="form__privacy checkbox">
+                <input class="checkbox__input" type="checkbox" required hidden />
+                <span class="checkbox__icon-wrapper">
+                  <svg class="icon checkbox__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
                 Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
               </label>
-              <button class="form__submit-btn" type="submit">ОТПРАВИТЬ icon</button>
+
+              <button class="button view-more-btn contacts__submit-btn" type="submit">
+                ОТПРАВИТЬ
+                <svg
+                  class="icon view-more-btn__icon contacts__submit-btn-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-next"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
