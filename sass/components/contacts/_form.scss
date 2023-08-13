@@ -55,4 +55,13 @@
 
 
 
-.form__submit-btn {}
+.form__submit-btn:disabled {
+    background-color: rgb(203, 198, 196);
+    color: #8D8D8D;
+
+    &>.icon {
+        fill: #8D8D8D;
+        animation: none;
+        transform: none;
+    }
+}

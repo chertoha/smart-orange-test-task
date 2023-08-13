@@ -265,8 +265,8 @@
                 <input class="form__field" type="text" placeholder="Интересующий товар/услуга" />
                 <textarea class="form__field form__area" placeholder="Сообщение"></textarea>
               </div>
-              <label class="form__privacy checkbox">
-                <input class="checkbox__input" type="checkbox" required hidden />
+              <label class="form__privacy checkbox js-label">
+                <input class="checkbox__input js-checkbox" type="checkbox" required hidden />
                 <span class="checkbox__icon-wrapper">
                   <svg class="icon checkbox__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-check"></use>
@@ -275,7 +275,11 @@
                 Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
               </label>
 
-              <button class="button view-more-btn contacts__submit-btn" type="submit">
+              <button
+                class="button view-more-btn form__submit-btn contacts__submit-btn js-submit"
+                type="submit"
+                disabled
+              >
                 ОТПРАВИТЬ
                 <svg
                   class="icon view-more-btn__icon contacts__submit-btn-icon"
@@ -337,5 +341,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

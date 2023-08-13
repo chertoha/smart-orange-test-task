@@ -558,4 +558,15 @@ ul {
   color: #333333;
   font-size: 14px;
   line-height: 1.21;
+}
+
+.form__submit-btn:disabled {
+  background-color: rgb(203, 198, 196);
+  color: #8D8D8D;
+}
+.form__submit-btn:disabled > .icon {
+  fill: #8D8D8D;
+  -webkit-animation: none;
+          animation: none;
+  transform: none;
 }/*# sourceMappingURL=main.css.map */
