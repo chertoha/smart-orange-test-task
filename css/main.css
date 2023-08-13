@@ -394,6 +394,21 @@ ul {
   gap: 30px;
 }
 
+.projects__rest-btn {
+  margin-left: auto;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  padding: 30px 40px;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.projects__rest-btn-icon {
+  fill: #ffffff;
+}
+
 .card {
   position: relative;
   overflow: hidden;
