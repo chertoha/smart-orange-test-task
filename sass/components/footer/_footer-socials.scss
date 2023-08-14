@@ -1,0 +1,27 @@
+.footer-socials {}
+
+.footer__title {
+    margin-bottom: 23px;
+}
+
+.footer-socials__list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.footer-socials__item {}
+
+
+.footer-socials__link {
+
+    @include transition (transform);
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.footer-socials__icon {
+    fill: #ffffff;
+}
