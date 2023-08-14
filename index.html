@@ -42,12 +42,14 @@
               <a class="link header-nav__link link header-nav__link--active" href="">ГЛАВНАЯ</a>
             </li>
             <li class="header-nav__item"><a class="link header-nav__link" href="">ГАЛЕРЕЯ</a></li>
-            <li class="header-nav__item"><a class="link header-nav__link" href="">ПРОЕКТЫ</a></li>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="#projects-ref">ПРОЕКТЫ</a>
+            </li>
             <li class="header-nav__item">
               <a class="link header-nav__link" href="">СЕРТИФИКАТЫ</a>
             </li>
             <li class="header-nav__item">
-              <a class="link header-nav__link" href="">КОНТАКТЫ</a>
+              <a class="link header-nav__link" href="#contacts-ref">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
@@ -64,12 +66,20 @@
                 <span class="main-title__lower">HOME</span>
               </h1>
               <div class="heading__arrows">
-                <button class="button heading__slide-btn" type="button">
+                <button
+                  class="button heading__slide-btn"
+                  type="button"
+                  aria-label="Предыдущий слайд"
+                >
                   <svg class="icon" width="24" height="24">
                     <use href="./images//icons.svg#icon-prev"></use>
                   </svg>
                 </button>
-                <button class="button heading__slide-btn" type="button">
+                <button
+                  class="button heading__slide-btn"
+                  type="button"
+                  aria-label="Следующий слайд"
+                >
                   <svg class="icon" width="24" height="24">
                     <use href="./images//icons.svg#icon-next"></use>
                   </svg>
@@ -145,7 +155,7 @@
       <section class="section">
         <div class="container">
           <div class="projects">
-            <h2 class="title projects__title">Наши проекты</h2>
+            <h2 id="projects-ref" class="title projects__title">Наши проекты</h2>
             <ul class="projects__list">
               <li class="projects__card card">
                 <div class="card__overlay">
@@ -164,6 +174,8 @@
                   "
                   src="./images/projects/projects-1-desktop@1x.jpg"
                   alt="ДОСУГОВЫЙ ЦЕНТР"
+                  width="570"
+                  height="255"
                 />
               </li>
 
@@ -184,6 +196,8 @@
                   "
                   src="./images/projects/projects-2-desktop@1x.jpg"
                   alt="Амфитеатр"
+                  width="570"
+                  height="255"
                 />
               </li>
 
@@ -204,6 +218,8 @@
                   "
                   src="./images/projects/projects-3-desktop@1x.jpg"
                   alt="Погрузочны Терминал"
+                  width="270"
+                  height="255"
                 />
               </li>
 
@@ -224,6 +240,8 @@
                   "
                   src="./images/projects/projects-4-desktop@1x.jpg"
                   alt="Жилой комплекс"
+                  width="470"
+                  height="255"
                 />
               </li>
 
@@ -244,6 +262,8 @@
                   "
                   src="./images/projects/projects-5-desktop@1x.jpg"
                   alt="Парк развлечений"
+                  width="370"
+                  height="255"
                 />
               </li>
             </ul>
@@ -260,7 +280,7 @@
       <section class="section">
         <div class="container">
           <div class="contacts">
-            <h2 class="title contacts__title">Связаться с нами</h2>
+            <h2 id="contacts-ref" class="title contacts__title">Связаться с нами</h2>
             <form class="contacts__form form">
               <div class="form__wrapper">
                 <input class="form__field" type="text" placeholder="Имя" />
@@ -322,13 +342,13 @@
                   <a class="link footer-nav__link" href="">ГАЛЕРЕЯ</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="link footer-nav__link" href="">ПРОЕКТЫ</a>
+                  <a class="link footer-nav__link" href="#projects-ref">ПРОЕКТЫ</a>
                 </li>
                 <li class="footer-nav__item">
                   <a class="link footer-nav__link" href="">СЕРТИФИКАТЫ</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="link footer-nav__link" href="">КОНТАКТЫ</a>
+                  <a class="link footer-nav__link" href="#contacts-ref">КОНТАКТЫ</a>
                 </li>
               </ul>
             </nav>

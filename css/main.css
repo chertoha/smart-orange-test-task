@@ -3,9 +3,6 @@ body {
   max-width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -496,9 +493,12 @@ ul {
   line-height: 1;
   letter-spacing: 2.4px;
 }
+.card__btn:hover {
+  color: #BDBDBD;
+}
 
 .card__btn-icon {
-  fill: #fff;
+  fill: currentColor;
 }
 
 .contacts__title {

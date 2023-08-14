@@ -69,8 +69,12 @@
     font-size: 12px;
     line-height: 1;
     letter-spacing: 2.4px;
+
+    &:hover {
+        color: $title-color;
+    }
 }
 
 .card__btn-icon {
-    fill: #fff;
+    fill: currentColor;
 }
