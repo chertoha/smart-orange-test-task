@@ -1,16 +1,30 @@
 .footer-address {
-    margin-right: 70px;
-    width: 320px;
+
+    @include mq('tablet') {
+
+        width: 200px;
+    }
+
+    @include mq('desktop') {
+        width: 320px;
+    }
 }
 
 .footer-address__title {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @include mq('tablet') {
+        margin-bottom: 25px;
+        text-align: left;
+    }
 }
 
 
 .footer-address__item {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     column-gap: 14px;
 
     color: #ffffff;
@@ -18,24 +32,45 @@
     line-height: 1.71;
     font-style: normal;
 
+    @include mq('tablet') {
+        justify-content: flex-start;
+    }
+}
 
-    &--location {
-        margin-bottom: 50px;
+
+.footer-address__item--location {
+    text-align: center;
+    margin-bottom: 20px;
+
+    &>.footer-address__icon-wrapper {
+        display: none;
     }
 
-    &--link {
-        margin-bottom: 33px;
+    @include mq('tablet') {
+        margin-bottom: 50px;
+        text-align: left;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &:hover .icon {
-            animation: icon-jump 500ms $transition-timing-function infinite
+        &>.footer-address__icon-wrapper {
+            display: block;
         }
     }
 }
 
+.footer-address__item--link {
+    margin-bottom: 14px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover .icon {
+        animation: icon-jump 500ms $transition-timing-function infinite
+    }
+
+    @include mq('desktop') {
+        margin-bottom: 33px;
+    }
+}
 
 
 .footer-address__icon-wrapper {

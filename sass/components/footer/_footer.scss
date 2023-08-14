@@ -1,7 +1,4 @@
 .footer {
-    // margin: 0 auto;
-    // max-width: 1440px;
-
     color: #ffffff;
     font-weight: 500;
     background-color: $secondary-background-color;
@@ -15,25 +12,54 @@
 
 
 .footer__upper {
-    display: flex;
-    align-items: flex-start;
 
     padding: 60px 0;
+
+    @include mq('desktop') {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 
 
 .footer__logo {
+    margin: 0 auto;
+    margin-bottom: 60px;
+
     display: block;
     width: 145px;
     height: 94px;
-    margin-right: 100px;
+
+
+
+    @include mq('desktop') {
+        margin-right: 100px;
+    }
 }
 
 
 
 .footer__logo-icon {
     fill: #ffffff;
+}
+
+.footer__contacts {
+
+    margin-bottom: 60px;
+
+
+    @include mq('tablet') {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    @include mq('desktop') {
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
 }
 
 .footer__lower {

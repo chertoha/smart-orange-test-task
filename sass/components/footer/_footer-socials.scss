@@ -1,13 +1,25 @@
-.footer-socials {}
+.footer-socials {
+    width: fit-content;
+    margin: 0 auto;
+}
 
-.footer__title {
+.footer-socials__title {
     margin-bottom: 23px;
+    text-align: center;
+
+    @include mq('desktop') {
+        text-align: left;
+    }
+
 }
 
 .footer-socials__list {
+
     display: flex;
     align-items: center;
     column-gap: 40px;
+
+
 }
 
 .footer-socials__item {}
