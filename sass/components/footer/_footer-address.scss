@@ -1,0 +1,33 @@
+.footer-address {}
+
+.footer-address__title {
+    margin-bottom: 25px;
+}
+
+.footer-address__wrapper {}
+
+.footer-address__location {
+    margin-bottom: 50px;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-address__icon {
+    // fill: #ffffff;
+    stroke: #ffffff;
+}
+
+
+.footer-address__link {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
+
+.footer-address__link+.footer-address__link {
+    margin-top: 33px;
+}

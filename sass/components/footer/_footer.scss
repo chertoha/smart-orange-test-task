@@ -1,0 +1,36 @@
+.footer {
+    color: #ffffff;
+    font-weight: 500;
+    background-color: $secondary-background-color;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+
+.footer__upper {
+    display: flex;
+    align-items: flex-start;
+
+    padding: 60px 0;
+}
+
+
+
+.footer__logo {
+    display: block;
+    width: 145px;
+    height: 94px;
+    margin-right: 100px;
+}
+
+
+
+.footer__logo-icon {
+    fill: #ffffff;
+}
+
+.footer__lower {}

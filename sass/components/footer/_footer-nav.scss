@@ -1,0 +1,36 @@
+.footer-nav {
+    margin-right: 157px;
+
+}
+
+.footer-nav__title {
+    margin-bottom: 25px;
+}
+
+.footer-nav__wrapper {}
+
+.footer-nav__list {
+    font-size: 14px;
+    line-height: 1.71;
+
+
+
+}
+
+.footer-nav__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.footer-nav__link {
+    text-transform: lowercase;
+    color: #ffffff;
+
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
