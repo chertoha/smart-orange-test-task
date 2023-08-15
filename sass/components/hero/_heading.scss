@@ -43,16 +43,22 @@
     position: relative;
     width: 100%;
 
-    &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        background-color: #F2F2F2;
 
+
+    @include mq('desktop') {
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #F2F2F2;
+
+
+
+        }
     }
 }
 
