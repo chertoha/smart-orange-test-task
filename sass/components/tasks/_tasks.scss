@@ -3,6 +3,7 @@
 
 .tasks__title {
 
+    margin-bottom: 20px;
 
     @include mq('desktop') {
         margin-bottom: 60px;
@@ -10,24 +11,27 @@
 }
 
 .tasks__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // column-gap: 187px;
 
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.636;
+
+    @include mq('desktop') {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 22px;
+    }
 
 
 }
 
 .tasks__item {
     display: flex;
-    // height: 140px;
-    // width: 570px;
-    height: 140px;
     column-gap: 30px;
     flex-shrink: 0;
+
+    margin-bottom: 30px;
 
     &:nth-child(1) .tasks__text {
         width: 279px;
@@ -36,11 +40,34 @@
     &:nth-child(2) .tasks__text {
         width: 440px;
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq('tablet') {
+        // height: 140px;
+    }
+
+    @include mq('desktop') {
+        margin-bottom: 0;
+    }
 }
 
 .tasks__icon {
     flex-shrink: 0;
     fill: #F2F2F2;
+
+    width: 60px;
+
+
+    @include mq('tablet') {
+        width: 120px;
+    }
+
+    @include mq('desktop') {
+        height: 140px;
+    }
 }
 
 .tasks__text {}

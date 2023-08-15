@@ -386,6 +386,9 @@ ul {
   }
 }
 
+.tasks__title {
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1440px) {
   .tasks__title {
     margin-bottom: 60px;
@@ -393,19 +396,24 @@ ul {
 }
 
 .tasks__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1.636;
+}
+@media screen and (min-width: 1440px) {
+  .tasks__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+  }
 }
 
 .tasks__item {
   display: flex;
-  height: 140px;
   -moz-column-gap: 30px;
        column-gap: 30px;
   flex-shrink: 0;
+  margin-bottom: 30px;
 }
 .tasks__item:nth-child(1) .tasks__text {
   width: 279px;
@@ -413,10 +421,29 @@ ul {
 .tasks__item:nth-child(2) .tasks__text {
   width: 440px;
 }
+.tasks__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1440px) {
+  .tasks__item {
+    margin-bottom: 0;
+  }
+}
 
 .tasks__icon {
   flex-shrink: 0;
   fill: #F2F2F2;
+  width: 60px;
+}
+@media screen and (min-width: 768px) {
+  .tasks__icon {
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tasks__icon {
+    height: 140px;
+  }
 }
 
 .projects__title {
