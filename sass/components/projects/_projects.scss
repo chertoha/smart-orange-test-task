@@ -19,12 +19,18 @@
 
 
 .projects__card {
-    width: fit-content;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 470px;
+    width: 100%;
+    max-width: 470px;
+
+    @include mq('tablet') {
+        width: fit-content;
+
+    }
 
     @include mq('desktop') {
+        max-width: none;
         width: auto;
         margin-bottom: 0;
     }
