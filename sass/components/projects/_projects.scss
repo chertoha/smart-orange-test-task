@@ -1,27 +1,67 @@
 .projects__title {
-    margin-bottom: 60px;
+    margin-bottom: 22px;
+
+    @include mq('desktop') {
+
+        margin-bottom: 60px;
+    }
 }
 
 .projects__list {
     margin-bottom: 30px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 30px;
+
+    @include mq('desktop') {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 
-.projects__card {}
+.projects__card {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 470px;
+
+    @include mq('desktop') {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.projects__card--invisible {
+    display: none;
+
+    @include mq('desktop') {
+        display: list-item;
+    }
+}
+
 
 .projects__rest-btn {
+    margin-right: auto;
     margin-left: auto;
+
     column-gap: 12px;
-    padding: 30px 40px;
+    padding: 16px 40px;
 
     font-size: 12px;
     letter-spacing: 2.4px;
+    color: #ffffff;
 
     background-color: $primary-text-color;
-    color: #ffffff;
+
+    @include mq('desktop') {
+        margin-right: 0;
+        margin-left: auto;
+        padding: 30px 40px;
+    }
 }
 
 .projects__rest-btn-icon {

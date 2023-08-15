@@ -3,14 +3,18 @@
 .form__wrapper {
     margin-bottom: 22px;
 
-    background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
 
-    @include mq('retina') {
+
+    @include mq('desktop') {
         background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
-    }
 
-    background-repeat: no-repeat;
-    background-position: right;
+        @include mq('retina') {
+            background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
+        }
+
+        background-repeat: no-repeat;
+        background-position: right;
+    }
 
 }
 
@@ -18,7 +22,7 @@
     border: none;
     display: block;
 
-    width: 391px;
+    width: 100%;
     padding: 15px 21px;
     margin-bottom: 10px;
 
@@ -31,6 +35,10 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include mq('desktop') {
+        width: 391px;
     }
 }
 

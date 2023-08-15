@@ -3,7 +3,6 @@
     overflow: hidden;
     cursor: pointer;
 
-
     &:hover .card__overlay {
         transform: translateY(0);
     }
@@ -23,7 +22,7 @@
     height: 100%;
     @include transition(transform);
 
-    transform: translateY(101%);
+    transform: translateY(100%);
 
     background-color: rgba(51, 51, 51, 0.8);
 
@@ -38,6 +37,10 @@
 
     &--large {
         padding: 50px 80px;
+    }
+
+    @include mq('desktop') {
+        transform: translateY(101%);
     }
 }
 
@@ -77,4 +80,13 @@
 
 .card__btn-icon {
     fill: currentColor;
+}
+
+.card__image {
+
+    display: block;
+
+    @include mq('desktop') {
+        // height: auto;
+    }
 }

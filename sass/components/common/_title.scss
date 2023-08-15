@@ -2,6 +2,11 @@
     font-weight: 300;
     color: $title-color;
     line-height: 1;
+    font-size: 24px;
+
+    @include mq('tablet') {
+        font-size: 32px;
+    }
 
     @include mq('desktop') {
         font-size: 64px;
