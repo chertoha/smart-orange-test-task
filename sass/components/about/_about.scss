@@ -2,13 +2,11 @@
     background-color: #FBFBFB;
     padding: 16px 16px;
 
-
     @include mq('tablet') {
         padding: 30px 30px 30px 330px;
         background:
             url('../../../images/about/about-1-desktop@1x.jpg') top 30px left 30px no-repeat;
         background-color: #FBFBFB;
-
     }
 
     @include mq('desktop') {
@@ -27,33 +25,21 @@
                 url('../../../images/about/about-3-desktop@2x.jpg') bottom 0 left 100px no-repeat,
                 linear-gradient(#FBFBFB, #FBFBFB calc(100% - 30px), #ffffff calc(100% - 30px), #ffffff);
 
-
             background-size: 270px 345px,
                 270px 265px,
                 270px 140px, 100% 100%;
         }
-
     }
 }
 
 .about__title {
     margin-bottom: 20px;
-
-    @include mq('desktop') {
-        // margin-bottom: 20px;
-    }
 }
 
 .about__description {
     line-height: 1.79;
     color: #000000;
     margin-bottom: 20px;
-
-
-    @include mq('desktop') {
-        // margin-bottom: 20px;
-    }
-
 }
 
 .about__readmore-btn {
@@ -64,6 +50,5 @@
 
     @include mq('desktop') {
         padding: 24px 65px;
-
     }
 }

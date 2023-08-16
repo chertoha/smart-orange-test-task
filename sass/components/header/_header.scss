@@ -4,3 +4,15 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.header__menu-btn {
+
+    & .icon {
+        stroke: black;
+    }
+
+    @include mq('desktop') {
+        display: none;
+    }
+
+}

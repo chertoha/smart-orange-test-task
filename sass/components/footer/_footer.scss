@@ -10,9 +10,7 @@
     line-height: 1.25;
 }
 
-
 .footer__upper {
-
     padding: 60px 0;
 
     @include mq('desktop') {
@@ -21,8 +19,6 @@
     }
 }
 
-
-
 .footer__logo {
     margin: 0 auto;
     margin-bottom: 60px;
@@ -30,8 +26,6 @@
     display: block;
     width: 145px;
     height: 94px;
-
-
 
     @include mq('desktop') {
         margin-right: 100px;
@@ -45,9 +39,7 @@
 }
 
 .footer__contacts {
-
     margin-bottom: 60px;
-
 
     @include mq('tablet') {
         display: flex;
@@ -68,8 +60,6 @@
     justify-content: center;
 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-
 }
 
 .footer__copyright {

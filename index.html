@@ -56,20 +56,45 @@
         <a class="logo link" href="/">
           <img
             class="logo__icon"
-            src="./images//logo/logo-header@2x.png"
+            src="./images/logo/logo-header@2x.png"
             alt="Логотип"
             width="70"
             height="44"
           />
         </a>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
+
+        <button
+          class="button header__menu-btn js-menu-btn"
+          type="button"
+          aria-label="Меню"
+          aria-expanded="false"
+          aria-controls="menuId"
+        >
+          <svg class="icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <nav id="menuId" class="header-nav js-menu">
+          <button
+            class="button header-nav__close-btn js-close-menu-btn"
+            type="button"
+            aria-label="Закрыть меню"
+          >
+            <svg class="icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="header-nav__list js-menu-list">
             <li class="header-nav__item">
               <a class="link header-nav__link link header-nav__link--active" href="">ГЛАВНАЯ</a>
             </li>
-            <li class="header-nav__item"><a class="link header-nav__link" href="">ГАЛЕРЕЯ</a></li>
             <li class="header-nav__item">
-              <a class="link header-nav__link" href="#projects-ref">ПРОЕКТЫ</a>
+              <a class="link header-nav__link" href="">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="link header-nav__link js-menu-item" href="#projects-ref">ПРОЕКТЫ</a>
             </li>
             <li class="header-nav__item">
               <a class="link header-nav__link" href="">СЕРТИФИКАТЫ</a>

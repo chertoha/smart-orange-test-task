@@ -2,7 +2,6 @@
     margin-bottom: 22px;
 
     @include mq('desktop') {
-
         margin-bottom: 60px;
     }
 }
@@ -26,7 +25,6 @@
 
     @include mq('tablet') {
         width: fit-content;
-
     }
 
     @include mq('desktop') {
@@ -65,8 +63,6 @@
     color: #ffffff;
 
     background-color: $primary-text-color;
-
-
 
     @include mq('desktop') {
         max-width: none;

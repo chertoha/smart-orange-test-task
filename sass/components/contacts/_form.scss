@@ -1,9 +1,5 @@
-.form {}
-
 .form__wrapper {
     margin-bottom: 22px;
-
-
 
     @include mq('desktop') {
         background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
@@ -15,7 +11,6 @@
         background-repeat: no-repeat;
         background-position: right;
     }
-
 }
 
 .form__field {
@@ -59,9 +54,6 @@
     line-height: 1.21;
 
 }
-
-
-
 
 .form__submit-btn:disabled {
     background-color: rgb(203, 198, 196);

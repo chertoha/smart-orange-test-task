@@ -1,23 +1,60 @@
 .header-nav {
+    display: none;
 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    background-color: rgb(192, 187, 187);
+
+    @include mq('not-desktop') {
+        max-width: 320px;
+        overflow-y: auto;
+    }
 
     @include mq('desktop') {
+        position: static;
+        display: block;
         width: 770px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    &.is-open {
+        display: block;
     }
 }
 
 .header-nav__list {
-    display: flex;
     align-items: center;
+    padding: 60px;
+
+    @include mq('desktop') {
+        padding: 0;
+        display: flex;
+        position: static;
+        width: 770px;
+        background-color: transparent;
+    }
 }
 
 
 .header-nav__item {
-    margin-right: 60px;
 
+    @include mq('not-desktop') {
+        margin-bottom: 40px;
+    }
+
+    @include mq('desktop') {
+        margin-right: 60px;
+    }
 
     &:last-child {
         margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -27,6 +64,8 @@
     padding: 4px 0;
     text-transform: uppercase;
     color: $primary-text-color;
+
+    @include transition(color);
 
     &::before,
     &::after {
@@ -38,7 +77,6 @@
         background-color: $primary-text-color ;
 
         @include transition(transform);
-
         transform: scale(0);
     }
 
@@ -54,20 +92,45 @@
 }
 
 .header-nav__link--active {
+    @include mq('not-desktop') {
+        color: #f1eeed;
+    }
 
-    &::before,
-    &::after {
-        transform: scale(1);
+    @include mq('desktop') {
+
+        &::before,
+        &::after {
+            transform: scale(1);
+        }
     }
 
 }
 
-
 .header-nav__link:hover {
 
-    &::before,
-    &::after {
-        transform: scale(1);
+    @include mq('not-desktop') {
+        color: #f1eeed;
+    }
+
+    @include mq('desktop') {
+
+        &::before,
+        &::after {
+            transform: scale(1);
+        }
+    }
+
+}
+
+.header-nav__close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    fill: $primary-text-color;
+
+    @include mq('desktop') {
+        display: none;
     }
 
 }

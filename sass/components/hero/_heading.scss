@@ -1,6 +1,4 @@
 .heading {
-    // padding-left: 100px;
-    // padding-top: 336px;
     flex-grow: 1;
     width: fit-content;
     margin-left: auto;
@@ -8,21 +6,15 @@
     padding-top: 50px;
     padding-right: 30px;
 
-    // justify-self: flex-end;
-
     @include mq('tablet') {
         padding-left: 100px;
         padding-top: 200px;
     }
 
-
     @include mq('desktop') {
         padding-left: 0;
-
         padding-top: 336px;
     }
-
-    // @media screen and (max-width: ) {}
 }
 
 
@@ -43,8 +35,6 @@
     @include mq('tablet') {
         margin-bottom: 90px;
     }
-
-
 }
 
 .heading__slide-btn {
@@ -83,8 +73,6 @@
     position: relative;
     width: 100%;
 
-
-
     @include mq('desktop') {
         &::after {
             content: '';
@@ -109,7 +97,6 @@
     color: #ffffff;
     line-height: 1;
 
-
     @include mq('tablet') {
         width: 142px;
         color: $primary-text-color;
@@ -131,7 +118,6 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     background-color: #e7e7e7;
-
 
     @include mq('tablet') {
         width: 44px;

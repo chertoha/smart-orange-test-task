@@ -1,9 +1,9 @@
 .button {
+    padding: 0;
+    margin: 0;
     cursor: pointer;
     display: block;
     background-color: transparent;
     border: none;
-
     @include transition(all);
-    // @include transition(color);
 }
