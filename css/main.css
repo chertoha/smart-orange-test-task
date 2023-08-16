@@ -861,14 +861,14 @@ ul {
 }
 @media screen and (min-width: 1440px) {
   .form__wrapper {
-    background-image: url("../../../images/contacts/contacts-desktop@1x.jpg");
+    background-image: url("../images/contacts/contacts-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right;
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .form__wrapper {
-    background-image: url("../../../images/contacts/contacts-desktop@1x.jpg");
+    background-image: url("../images/contacts/contacts-desktop@2x.jpg");
   }
 }
 

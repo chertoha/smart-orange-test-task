@@ -2,10 +2,10 @@
     margin-bottom: 22px;
 
     @include mq('desktop') {
-        background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
+        background-image: url('../images/contacts/contacts-desktop@1x.jpg');
 
         @include mq('retina') {
-            background-image: url('../../../images/contacts/contacts-desktop@1x.jpg');
+            background-image: url('../images/contacts/contacts-desktop@2x.jpg');
         }
 
         background-repeat: no-repeat;
