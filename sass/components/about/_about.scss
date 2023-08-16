@@ -57,11 +57,13 @@
 }
 
 .about__readmore-btn {
-    padding: 16px 50px;
+    padding: 16px 40px;
     color: $primary-text-color;
+    column-gap: 12px;
+    font-size: 12px;
 
     @include mq('desktop') {
         padding: 24px 65px;
-        column-gap: 12px;
+
     }
 }

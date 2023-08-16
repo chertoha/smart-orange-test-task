@@ -495,14 +495,15 @@ ul {
   margin-bottom: 20px;
 }
 .about__readmore-btn {
-  padding: 16px 50px;
+  padding: 16px 40px;
   color: #333333;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  font-size: 12px;
 }
 @media screen and (min-width: 1440px) {
   .about__readmore-btn {
     padding: 24px 65px;
-    -moz-column-gap: 12px;
-         column-gap: 12px;
   }
 }
 
