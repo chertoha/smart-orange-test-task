@@ -5,7 +5,7 @@
     @include mq('tablet') {
         padding: 30px 30px 30px 330px;
         background:
-            url('../../../images/about/about-1-desktop@1x.jpg') top 30px left 30px no-repeat;
+            url('../images/about/about-1-desktop@1x.jpg') top 30px left 30px no-repeat;
         background-color: #FBFBFB;
     }
 
@@ -13,16 +13,16 @@
         padding: 30px 70px 60px 700px;
         background-color: transparent;
         background:
-            url('../../../images/about/about-1-desktop@1x.jpg') top 60px left 400px no-repeat,
-            url('../../../images/about/about-2-desktop@1x.jpg') top 30px left 100px no-repeat,
-            url('../../../images/about/about-3-desktop@1x.jpg') bottom 0 left 100px no-repeat,
+            url('../images/about/about-1-desktop@1x.jpg') top 60px left 400px no-repeat,
+            url('../images/about/about-2-desktop@1x.jpg') top 30px left 100px no-repeat,
+            url('../images/about/about-3-desktop@1x.jpg') bottom 0 left 100px no-repeat,
             linear-gradient(#FBFBFB, #FBFBFB calc(100% - 30px), #ffffff calc(100% - 30px), #ffffff);
 
         @include mq('retina') {
             background:
-                url('../../../images/about/about-1-desktop@2x.jpg') top 60px left 400px no-repeat,
-                url('../../../images/about/about-2-desktop@2x.jpg') top 30px left 100px no-repeat,
-                url('../../../images/about/about-3-desktop@2x.jpg') bottom 0 left 100px no-repeat,
+                url('../images/about/about-1-desktop@2x.jpg') top 60px left 400px no-repeat,
+                url('../images/about/about-2-desktop@2x.jpg') top 30px left 100px no-repeat,
+                url('../images/about/about-3-desktop@2x.jpg') bottom 0 left 100px no-repeat,
                 linear-gradient(#FBFBFB, #FBFBFB calc(100% - 30px), #ffffff calc(100% - 30px), #ffffff);
 
             background-size: 270px 345px,
