@@ -53,8 +53,8 @@
     justify-content: center;
     flex-shrink: 0;
 
-    width: 53px;
-    height: 53px;
+    width: 40px;
+    height: 40px;
     background-color: #ffffff;
     border: 1px solid #F2F2F2;
     background-color: #F9F9F9;
@@ -64,6 +64,8 @@
     }
 
     @include mq('tablet') {
+        width: 53px;
+        height: 53px;
         background-color: #F9F9F9;
         border: 1px solid #b6b6b6;
     }
