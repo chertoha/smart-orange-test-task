@@ -1,13 +1,25 @@
 .heading {
-    padding-left: 100px;
-    padding-top: 336px;
+    // padding-left: 100px;
+    // padding-top: 336px;
     flex-grow: 1;
+    width: fit-content;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-top: 50px;
+    padding-right: 30px;
 
     // justify-self: flex-end;
+
+    @include mq('tablet') {
+        padding-left: 100px;
+        padding-top: 200px;
+    }
 
 
     @include mq('desktop') {
         padding-left: 0;
+
+        padding-top: 336px;
     }
 
     // @media screen and (max-width: ) {}
@@ -15,16 +27,22 @@
 
 
 .heading__title {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+
+    @include mq('tablet') {
+        margin-bottom: 90px;
+    }
 }
 
 
 
 .heading__arrows {
-
     display: flex;
-    // column-gap: 23px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+
+    @include mq('tablet') {
+        margin-bottom: 90px;
+    }
 
 
 }
@@ -38,10 +56,16 @@
     width: 53px;
     height: 53px;
     background-color: #ffffff;
-    border: 1px solid rgb(182, 182, 182);
+    border: 1px solid #F2F2F2;
+    background-color: #F9F9F9;
 
     &:hover {
+        background-color: #c1bfbf;
+    }
+
+    @include mq('tablet') {
         background-color: #F9F9F9;
+        border: 1px solid #b6b6b6;
     }
 
     @include mq('desktop') {
@@ -69,37 +93,24 @@
             left: 0;
             transform: translateY(-50%);
             background-color: #F2F2F2;
-
-
-
         }
     }
 }
 
 .heading__date {
     position: relative;
-    width: 142px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
 
     font-size: 24px;
-    color: $primary-text-color;
+    color: #ffffff;
     line-height: 1;
 
 
-    &::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 44px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
-        background-color: $primary-text-color;
-
-        @include mq('desktop') {
-            background-color: #E0E0E0;
-        }
+    @include mq('tablet') {
+        width: 142px;
+        color: $primary-text-color;
     }
 
     @include mq('desktop') {
@@ -108,6 +119,24 @@
 
 }
 
-.heading__day {}
 
-.heading__month {}
+.heading__date::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #e7e7e7;
+
+
+    @include mq('tablet') {
+        width: 44px;
+        background-color: $primary-text-color;
+    }
+
+    @include mq('desktop') {
+        background-color: #E0E0E0;
+    }
+}

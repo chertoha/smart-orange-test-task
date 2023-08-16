@@ -1,11 +1,20 @@
 .main-title {
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1;
+
+
+    @include mq('tablet') {
+        font-size: 64px;
+    }
 }
 
 .main-title__upper {
     font-weight: 300;
-    color: $primary-text-color;
+    color: #fcfcfc;
+
+    @include mq('tablet') {
+        color: $primary-text-color;
+    }
 
     @include mq('desktop') {
         color: #BDBDBD;

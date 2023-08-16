@@ -1,12 +1,26 @@
 .hero {
     display: flex;
+    flex-direction: column;
+
+    height: 600px;
     justify-content: space-between;
 
     background-color: #ffffff;
     background-repeat: no-repeat;
 
 
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        url("../../../images/hero/hero-mobile@1x.jpg");
+
+    @include mq('retina') {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+            url("../../../images/hero/hero-mobile@2x.jpg");
+    }
+
     @include mq('tablet') {
+        flex-direction: row;
         height: 829px;
         background-size: 770px 829px;
         background-position: right;
@@ -51,12 +65,17 @@
 
 
 .hero__view-btn {
-    padding: 20px 40px;
+    padding: 16px 25px;
     column-gap: 12px;
     color: $primary-text-color;
 
+    font-size: 12px;
+
+    @include mq('tablet') {
+        padding: 20px 40px;
+    }
+
     @include mq('desktop') {
         padding: 30px 50px;
-        // column-gap: 12px;
     }
 }
