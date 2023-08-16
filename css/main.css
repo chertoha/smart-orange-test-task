@@ -259,19 +259,16 @@ ul {
     height: 829px;
     background-size: 770px 829px;
     background-position: right;
-    background-image: url("../../../images/hero/hero-desktop@1x.jpg");
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url("../../../images/hero/hero-desktop@1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../../images/hero/hero-desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url("../../../images/hero/hero-desktop@2x.jpg");
   }
 }
 @media screen and (min-width: 1440px) {
   .hero {
-    height: 829px;
-    background-size: 770px 829px;
-    background-position: right;
     background-image: url("../../../images/hero/hero-desktop@1x.jpg");
   }
 }
@@ -292,19 +289,26 @@ ul {
 }
 
 .hero__view-btn {
+  padding: 20px 40px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   color: #333333;
 }
 @media screen and (min-width: 1440px) {
   .hero__view-btn {
     padding: 30px 50px;
-    -moz-column-gap: 12px;
-         column-gap: 12px;
   }
 }
 
 .heading {
+  padding-left: 100px;
   padding-top: 336px;
   flex-grow: 1;
+}
+@media screen and (min-width: 1440px) {
+  .heading {
+    padding-left: 0;
+  }
 }
 
 .heading__title {
@@ -324,10 +328,15 @@ ul {
   width: 53px;
   height: 53px;
   background-color: #ffffff;
-  border: 1px solid #F2F2F2;
+  border: 1px solid rgb(182, 182, 182);
 }
 .heading__slide-btn:hover {
   background-color: #F9F9F9;
+}
+@media screen and (min-width: 1440px) {
+  .heading__slide-btn {
+    border: 1px solid #F2F2F2;
+  }
 }
 
 .heading__slide-btn + .heading__slide-btn {
@@ -357,7 +366,7 @@ ul {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
-  color: #BDBDBD;
+  color: #333333;
   line-height: 1;
 }
 .heading__date::after {
@@ -368,7 +377,17 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  background-color: #E0E0E0;
+  background-color: #333333;
+}
+@media screen and (min-width: 1440px) {
+  .heading__date::after {
+    background-color: #E0E0E0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .heading__date {
+    color: #BDBDBD;
+  }
 }
 
 .main-title {
@@ -378,7 +397,12 @@ ul {
 
 .main-title__upper {
   font-weight: 300;
-  color: #BDBDBD;
+  color: #333333;
+}
+@media screen and (min-width: 1440px) {
+  .main-title__upper {
+    color: #BDBDBD;
+  }
 }
 
 .main-title__lower {

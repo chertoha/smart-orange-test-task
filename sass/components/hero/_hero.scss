@@ -5,35 +5,29 @@
     background-color: #ffffff;
     background-repeat: no-repeat;
 
-    // @include mq('tablet') {
-    //     height: 600px;
-    //     background-size: cover;
-
-    //     background-image: url("../../../images/hero/hero-tablet@1x.jpg");
-
-    //     @include mq('retina') {
-    //         background-image: url("../../../images/hero/hero-tablet@2x.jpg");
-    //     }
-    // }
-
 
     @include mq('tablet') {
         height: 829px;
         background-size: 770px 829px;
         background-position: right;
 
-        background-image: url("../../../images/hero/hero-desktop@1x.jpg");
+        background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+            url("../../../images/hero/hero-desktop@1x.jpg");
+
 
         @include mq('retina') {
-            background-image: url("../../../images/hero/hero-desktop@2x.jpg");
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+                url("../../../images/hero/hero-desktop@2x.jpg");
         }
     }
 
 
     @include mq('desktop') {
-        height: 829px;
-        background-size: 770px 829px;
-        background-position: right;
+        // height: 829px;
+        // background-size: 770px 829px;
+        // background-position: right;
 
         background-image: url("../../../images/hero/hero-desktop@1x.jpg");
 
@@ -57,10 +51,12 @@
 
 
 .hero__view-btn {
+    padding: 20px 40px;
+    column-gap: 12px;
     color: $primary-text-color;
 
     @include mq('desktop') {
         padding: 30px 50px;
-        column-gap: 12px;
+        // column-gap: 12px;
     }
 }

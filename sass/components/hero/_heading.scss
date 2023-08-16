@@ -1,6 +1,16 @@
 .heading {
+    padding-left: 100px;
     padding-top: 336px;
     flex-grow: 1;
+
+    // justify-self: flex-end;
+
+
+    @include mq('desktop') {
+        padding-left: 0;
+    }
+
+    // @media screen and (max-width: ) {}
 }
 
 
@@ -28,10 +38,14 @@
     width: 53px;
     height: 53px;
     background-color: #ffffff;
-    border: 1px solid #F2F2F2;
+    border: 1px solid rgb(182, 182, 182);
 
     &:hover {
         background-color: #F9F9F9;
+    }
+
+    @include mq('desktop') {
+        border: 1px solid #F2F2F2;
     }
 }
 
@@ -69,7 +83,7 @@
     justify-content: space-between;
 
     font-size: 24px;
-    color: $title-color;
+    color: $primary-text-color;
     line-height: 1;
 
 
@@ -81,10 +95,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
-        background-color: #E0E0E0;
+        background-color: $primary-text-color;
 
+        @include mq('desktop') {
+            background-color: #E0E0E0;
+        }
     }
 
+    @include mq('desktop') {
+        color: $title-color;
+    }
 
 }
 

@@ -5,7 +5,11 @@
 
 .main-title__upper {
     font-weight: 300;
-    color: #BDBDBD;
+    color: $primary-text-color;
+
+    @include mq('desktop') {
+        color: #BDBDBD;
+    }
 }
 
 .main-title__lower {
